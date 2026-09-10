@@ -90,7 +90,7 @@ if agentic_kv_offload_enabled; then
     else
         HICACHE_RATIO="${HICACHE_RATIO:-1.5}"
     fi
-    HICACHE_WRITE_POLICY="${HICACHE_WRITE_POLICY:-write_through}"
+    HICACHE_WRITE_POLICY="${HICACHE_WRITE_POLICY:-write_back}"
     HICACHE_IO_BACKEND="${HICACHE_IO_BACKEND:-direct}"
     HICACHE_MEM_LAYOUT="${HICACHE_MEM_LAYOUT:-page_first_direct}"
     case "$KV_OFFLOAD_BACKEND" in
